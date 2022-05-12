@@ -8,16 +8,20 @@ In this project a lot of topics were covered, but the main focus was on NextJs b
 
 This is a Subscription Blog where users are allowed to see a preview of all posts, but they can't read the full article until subscribed. To subscribe you need to Sign In with Github and fill a real form (the form format is real but the charging process is disabled).
 
+### Home Page
+![alt App Home](https://github.com/bernardobpl/ignews/blob/main/public/appPreview1.png?raw=true)
 
-![alt App Preview](https://github.com/bernardobpl/ignews/blob/main/public/appPreview1.png?raw=true)
+### Posts Page
+![alt App Posts](https://github.com/bernardobpl/ignews/blob/main/public/appPreview2.png?raw=true)
 
-![alt App Preview With Modal](https://github.com/bernardobpl/ignews/blob/main/public/appPreview2.png?raw=true)
+### Post Preview Page
+![alt App Post Preview](https://github.com/bernardobpl/ignews/blob/main/public/appPreview3.png?raw=true)
 
-![alt App Preview With Modal](https://github.com/bernardobpl/ignews/blob/main/public/appPreview3.png?raw=true)
+### Post Complete for subscribed users
+![alt App Post Complete](https://github.com/bernardobpl/ignews/blob/main/public/appPreview4.png?raw=true)
 
-![alt App Preview With Modal](https://github.com/bernardobpl/ignews/blob/main/public/appPreview4.png?raw=true)
-
-![alt App Preview With Modal](https://github.com/bernardobpl/ignews/blob/main/public/appPreview5.png?raw=true)
+### Stripe Payment Form
+![alt App Payment Form](https://github.com/bernardobpl/ignews/blob/main/public/appPreview5.png?raw=true)
 
 ## Main libraries used
 * Prismic libs as CMS
@@ -47,10 +51,10 @@ Set the following environment variables of each:
 * GITHUB_CLIENT_ID=
 * GITHUB_CLIENT_SECRET=
 
-# FaunaDB
+### FaunaDB
 FAUNADB_KEY=
 
-# Prismic
+### Prismic
 PRISMIC_ACCESS_TOKEN=
 
 Since stripe can't identify localhost, you must use stripe-cli to register your project, listen to webhooks and forward it to localhost webhook route manually.
@@ -75,7 +79,7 @@ Finally:
 * Serverless was a confusing concept until create a serverless project. It opened my eyes about what front end is becoming and how far can we go before need a real server. It's not a bulletproof solution, and does not replace backend servers, but is still a surprise wha it can achieve.
 * About database, FaunaDB has a interesting concept, and fits like a glove when used by serverless applications since it doesn't suffer the cost of oppening a database connection. Moreover it has a intuitive query language called FQL.
 
-# Notes
+## Notes
 * I was familiar with JS, ReactJS and NextJS. Tryied out NextJS and knew some of the features, but every course can still present new things, and now i feel comfortable to create my own Next project without help.
 * I concluded that it's not necessary to rely on the same packages for everything. I had some bad times configuring styled-components for other next projects, and just figured out how easy was to use Sass instead, and didn't miss the styled-components at all.
 * As it says: "NextJs is the ReactJs for production".
